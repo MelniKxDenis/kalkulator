@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<title>Calculator</title>
+</head>
+
+<body>
+
+	<header class="similar">
+		<p class="formula">Формула расчёта ВВП:</p>
+	</header>
+
+    <div>
+        <h2>ВВП = С + I + G + Xn, где</h3>
+        <p>С – личные потребительские расходы;<br> 
+            I – валовые частные внутренние инвестиции;<br>  
+            G – государственные закупки товаров и услуг;<br>
+            Xn - чистый экспорт (разница между экспортом и импортом)<br>
+        </p>
+    </div>
+
+		<form class="form">
+		<input type="text" placeholder="(С) Личные потребительские расходы" class="input" id = "c" required>
+		<input type="text" placeholder="(I) Валовые частные внутренние инвестиции" class="input" id = "i" required>
+		<input type="text" placeholder="(G) Государственные закупки товаров и услуг" class="input" id = "g" required>
+        <input type="text" placeholder="(Xn) Чистый экспорт" class="input" id = "xn" required>
+		</form>
+		
+
+	    <div class="label"><button id ="send">Вычислить</button></div>
+	    <p class="result" id="result"></p>
+
+	<footer class="similar">
+		Калькулятор
+	</footer>
+
+	<script src="main.js"></script>
+</body>
+</html>
